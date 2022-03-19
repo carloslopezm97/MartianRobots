@@ -28,17 +28,22 @@ namespace MartianRobotsTests.UnitTests
 
         [Theory]
         [MemberData(nameof(ExecutionModels))]
-        public async Task ExecuteTest(ExecutionModel executionModel, RobotResponseModel robotModel)
+        public async Task ExecuteTest(ExecutionModel executionModel, List<RobotResponseModel> robotModels)
         {
             var result = await this.executionRepository.Execute(executionModel);
-            var robotResponse = result.Robots[0];
 
-            Assert.NotNull(result);
-            Assert.NotNull(robotResponse);
-            Assert.Equal(robotResponse.FinalPosition.XCoordinate, robotModel.FinalPosition.XCoordinate);
-            Assert.Equal(robotResponse.FinalPosition.YCoordinate, robotModel.FinalPosition.YCoordinate);
-            Assert.Equal(robotResponse.FinalPosition.Orientation, robotModel.FinalPosition.Orientation);
-            Assert.Equal(robotResponse.Lost, robotModel.Lost);
+            for(int i = 0; i < executionModel.RobotModels.Count; i++)
+            {
+                var robotResponse = result.Robots[i];
+                var robotModel = robotModels[i];
+
+                Assert.NotNull(result);
+                Assert.NotNull(robotResponse);
+                Assert.Equal(robotResponse.FinalPosition.XCoordinate, robotModel.FinalPosition.XCoordinate);
+                Assert.Equal(robotResponse.FinalPosition.YCoordinate, robotModel.FinalPosition.YCoordinate);
+                Assert.Equal(robotResponse.FinalPosition.Orientation, robotModel.FinalPosition.Orientation);
+                Assert.Equal(robotResponse.Lost, robotModel.Lost);
+            }
         }
 
         public static List<object[]> ExecutionModels => new List<object[]> {
@@ -62,31 +67,7 @@ namespace MartianRobotsTests.UnitTests
                                 YCoordinate = 1
                             },
                             ListOfInstructions = "RFRFRFRF"
-                        }
-                    }
-                },
-                new RobotResponseModel
-                {
-                    FinalPosition = new PositionModel
-                    {
-                        Orientation = 'E',
-                        XCoordinate = 1,
-                        YCoordinate = 1,
-                    },
-                    Lost = false,
-                }
-            },
-            new object[]
-            {
-                new ExecutionModel
-                {
-                    GridModel = new GridModel
-                    {
-                        XSize = 5,
-                        YSize = 3,
-                    },
-                    RobotModels = new List<RobotModel>
-                    {
+                        },
                         new RobotModel
                         {
                             InitialPosition = new PositionModel
@@ -96,31 +77,7 @@ namespace MartianRobotsTests.UnitTests
                                 YCoordinate = 2
                             },
                             ListOfInstructions = "FRRFLLFFRRFLL"
-                        }
-                    }
-                },
-                new RobotResponseModel
-                {
-                    FinalPosition = new PositionModel
-                    {
-                        Orientation = 'N',
-                        XCoordinate = 3,
-                        YCoordinate = 3,
-                    },
-                    Lost = true,
-                }
-            },
-            new object[]
-            {
-                new ExecutionModel
-                {
-                    GridModel = new GridModel
-                    {
-                        XSize = 5,
-                        YSize = 3,
-                    },
-                    RobotModels = new List<RobotModel>
-                    {
+                        },
                         new RobotModel
                         {
                             InitialPosition = new PositionModel
@@ -133,15 +90,37 @@ namespace MartianRobotsTests.UnitTests
                         },
                     }
                 },
-                new RobotResponseModel
-                {
-                    FinalPosition = new PositionModel
+                new List<RobotResponseModel> {
+                    new RobotResponseModel
                     {
-                        Orientation = 'N',
-                        XCoordinate = 4,
-                        YCoordinate = 2,
+                        FinalPosition = new PositionModel
+                        {
+                            Orientation = 'E',
+                            XCoordinate = 1,
+                            YCoordinate = 1,
+                        },
+                        Lost = false,
                     },
-                    Lost = false,
+                    new RobotResponseModel
+                    {
+                        FinalPosition = new PositionModel
+                        {
+                            Orientation = 'N',
+                            XCoordinate = 3,
+                            YCoordinate = 3,
+                        },
+                        Lost = true,
+                    },
+                    new RobotResponseModel
+                    {
+                        FinalPosition = new PositionModel
+                        {
+                            Orientation = 'N',
+                            XCoordinate = 4,
+                            YCoordinate = 2,
+                        },
+                        Lost = false,
+                    }
                 }
             }
         };
