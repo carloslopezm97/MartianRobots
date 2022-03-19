@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jcEg5KETTHze4jJJ57ErFC9B70qMvSZt/zIqIyV/aJLL7qyfjVVaqyndlvQXBY8MYFbUBT66uAw5H0Pyk6HfOw==",
+  "dgSpecHash": "G1TOn9gpEzChsj0aGFU2N5TdNvMMgod2WcrjE8jaqnwIAzKzAxzMNEXpbeW8wnGeLPoPVMARi9HLOYoUHyANkg==",
   "success": true,
-  "projectFilePath": "C:\\Repos\\MartianRobots\\MartianRobotsTests\\MartianRobotsTests.csproj",
+  "projectFilePath": "C:\\Repos\\MartianRobotsGit\\MartianRobotsTests\\MartianRobotsTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\carlo\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\carlo\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",

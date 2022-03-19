@@ -2678,11 +2678,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repos\\MartianRobots\\MartianRobots\\MartianRobots.csproj",
+      "projectUniqueName": "C:\\Repos\\MartianRobotsGit\\MartianRobots\\MartianRobots.csproj",
       "projectName": "MartianRobots",
-      "projectPath": "C:\\Repos\\MartianRobots\\MartianRobots\\MartianRobots.csproj",
+      "projectPath": "C:\\Repos\\MartianRobotsGit\\MartianRobots\\MartianRobots.csproj",
       "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
-      "outputPath": "C:\\Repos\\MartianRobots\\MartianRobots\\obj\\",
+      "outputPath": "C:\\Repos\\MartianRobotsGit\\MartianRobots\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

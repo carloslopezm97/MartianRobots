@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repos\\MartianRobots\\MartianRobotsTests\\MartianRobotsTests.csproj": {}
+    "C:\\Repos\\MartianRobotsGit\\MartianRobotsTests\\MartianRobotsTests.csproj": {}
   },
   "projects": {
-    "C:\\Repos\\MartianRobots\\MartianRobotsTests\\MartianRobotsTests.csproj": {
+    "C:\\Repos\\MartianRobotsGit\\MartianRobotsTests\\MartianRobotsTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\MartianRobots\\MartianRobotsTests\\MartianRobotsTests.csproj",
+        "projectUniqueName": "C:\\Repos\\MartianRobotsGit\\MartianRobotsTests\\MartianRobotsTests.csproj",
         "projectName": "MartianRobotsTests",
-        "projectPath": "C:\\Repos\\MartianRobots\\MartianRobotsTests\\MartianRobotsTests.csproj",
+        "projectPath": "C:\\Repos\\MartianRobotsGit\\MartianRobotsTests\\MartianRobotsTests.csproj",
         "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\MartianRobots\\MartianRobotsTests\\obj\\",
+        "outputPath": "C:\\Repos\\MartianRobotsGit\\MartianRobotsTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Repos\\MartianRobots\\MartianRobots\\MartianRobots.csproj": {
-                "projectPath": "C:\\Repos\\MartianRobots\\MartianRobots\\MartianRobots.csproj"
+              "C:\\Repos\\MartianRobotsGit\\MartianRobots\\MartianRobots.csproj": {
+                "projectPath": "C:\\Repos\\MartianRobotsGit\\MartianRobots\\MartianRobots.csproj"
               }
             }
           }
@@ -96,14 +96,14 @@
         }
       }
     },
-    "C:\\Repos\\MartianRobots\\MartianRobots\\MartianRobots.csproj": {
+    "C:\\Repos\\MartianRobotsGit\\MartianRobots\\MartianRobots.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\MartianRobots\\MartianRobots\\MartianRobots.csproj",
+        "projectUniqueName": "C:\\Repos\\MartianRobotsGit\\MartianRobots\\MartianRobots.csproj",
         "projectName": "MartianRobots",
-        "projectPath": "C:\\Repos\\MartianRobots\\MartianRobots\\MartianRobots.csproj",
+        "projectPath": "C:\\Repos\\MartianRobotsGit\\MartianRobots\\MartianRobots.csproj",
         "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\MartianRobots\\MartianRobots\\obj\\",
+        "outputPath": "C:\\Repos\\MartianRobotsGit\\MartianRobots\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

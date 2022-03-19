@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gYQScRNkWQC9rwYx2UF5fIJsbyypUxKdaMM00i1rT20CZMgo6hZzVDpMgNYaMFjQnOrwmAJqnpty9Pa7M9Uo2Q==",
+  "dgSpecHash": "ERiBjE4T17H9n0vEpxOpNOaHBwO+tsf40Q70Mbmx/xpCOuZd3/rSwMGtH3L9bU9ATuPtsThrXXSIIR4JnqcHlA==",
   "success": true,
-  "projectFilePath": "C:\\Repos\\MartianRobots\\MartianRobots\\MartianRobots.csproj",
+  "projectFilePath": "C:\\Repos\\MartianRobotsGit\\MartianRobots\\MartianRobots.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\carlo\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\carlo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
