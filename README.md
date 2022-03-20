@@ -1,9 +1,9 @@
 # MartianRobots
 Martian Robots is a REST API developed in .net 6.
-The ORM used in the project is Entity Framework Core and the database creation method was developing first the models and dependencies in the project and then adding the option EnsureCreated to create the database automatically whenever the application is executed
+The ORM used in the project is Entity Framework Core and the database creation method was developing first the models and dependencies in the project and then adding the option EnsureCreated to create the database automatically whenever the application is executed.
 In order to execute the application, SQL Server must be installed and the database will be automatically created in the local server of your computer with the name MartianRobotsDB.
-Swagger has been implemented in the application in order to test the endpoints. However, it can be tested with any other tool such as Postman and aim to the url specified in the file launchSettings.json
-The project has a repository patterned developed that provides an abstraction layer between the database access and business logic.
+Swagger has been implemented in the application in order to test the endpoints. However, it can be tested with any other tool such as Postman and aim to the url specified in the file launchSettings.json.
+The project has a repository pattern developed that provides an abstraction layer between the database access and business logic.
 The project has been developed to be able to reuse a lot of code and make easier the next developments. Moreover, the project classes and methods have been completely commented describing their functionality.
 XUnit test project has been added with unit and integration tests.
 
